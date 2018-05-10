@@ -1,0 +1,7 @@
+{
+    "PORT": 3000,
+    "SERVER_TIMEOUT": 15000,
+    "MONGO_COLLECTION": {
+        "VAULT_COLLECTION": "vaultCollection"
+    }
+}
