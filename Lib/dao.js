@@ -7,8 +7,8 @@ let db;
 class dao {
   static async createConnection() {
     try {
-      const client = await mongoClient.connect(config.MONGO_URI);
-      db = await client.db(config.MONGO_DB);
+      const client = await mongoClient.connect(process.env.MONGO_URI);
+      db = await client.db(process.env.MONGO_DB);
       return db;
     } catch (error) {
       throw error;
