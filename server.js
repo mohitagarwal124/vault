@@ -41,7 +41,7 @@ app.use((err, req, res, next) => {
   response.sendError(errorData, res);
 });
 
-startServer = http.createServer(app).listen(config.PORT, () => {
+startServer = http.createServer(app).listen(process.env.PORT || config.PORT, () => {
   bootstrap.startInitialProcess();
 });
 
