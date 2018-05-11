@@ -3,7 +3,5 @@
     "SERVER_TIMEOUT": 15000,
     "MONGO_COLLECTION": {
         "VAULT_COLLECTION": "vaultCollection"
-    },
-    "MONGO_URI": "mongodb://mohitagarwal:mongo2wXC@ds119930.mlab.com:19930/vaultkey",
-    "MONGO_DB": "vaultkey"
+    }
 }
