@@ -3,9 +3,9 @@ const winston = require('winston');
 require('winston-daily-rotate-file');
 const config = require('../Config');
 
-if (!fs.existsSync(config.LOG_DIR)) {
-    fs.mkdirSync(config.LOG_DIR);
-}
+// if (!fs.existsSync(config.LOG_DIR)) {
+//     fs.mkdirSync(config.LOG_DIR);
+// }
 
 
 const transports = [];
