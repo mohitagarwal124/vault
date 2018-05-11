@@ -3,6 +3,5 @@
     "SERVER_TIMEOUT": 15000,
     "MONGO_COLLECTION": {
         "VAULT_COLLECTION": "vaultCollection"
-    },
-    "LOG_DIR": "../Logs"
+    }
 }
