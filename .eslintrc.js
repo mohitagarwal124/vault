@@ -24,5 +24,6 @@ module.exports = {
         "test": true,
         "expect": true,
         "startServer": true,
+        "logger": true
     }
 };

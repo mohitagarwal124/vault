@@ -1,6 +1,8 @@
 const daoBoot = require('./daoBoot');
 const config = require('../Config');
 
+logger = require('../Lib/logger');
+
 function stopServer() {
   startServer.close(() => {
     setTimeout(() => {
@@ -11,8 +13,10 @@ function stopServer() {
 
 async function startInitialProcess() {
   try {
+    logger.info('logger working');
+    logger.log('logger working');
     await daoBoot.createConnection();
-    console.log(`BootStrapinng Done, Server running at port: ${config.PORT}`);
+    logger.log(`BootStrapinng Done, Server running at port: ${config.PORT}`);
   } catch (error) {
     stopServer();
   }
